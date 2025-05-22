@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>
+      Contact Us
+   </title>
+   <link rel="icon" href="logo_1.png" />
+</head>
+
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+
+   }
+
+   h3 {
+      color: white;
+   }
+
+   h3:hover {
+      color: red;
+   }
+
+   ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: #00204fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+   }
+
+   li {
+      float: left;
+      position: relative;
+      top: 0px;
+   }
+
+   li img {
+      float: left;
+      position: relative;
+      top: 0px;
+	  margin-left: 20px;
+   }
+
+
+   li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 19px 10px;
+      text-decoration: none;
+      float: left;
+   }
+
+   li a:hover {
+      color: red;
+   }
+
+   input[type=text],
+   select,
+   textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+   }
+
+   input[type=submit] {
+      background-color: #4682B4;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+   }
+
+   input[type=submit]:hover {
+      background-color: #45a049;
+      color: floralwhite;
+   }
+
+   .container {
+      border-radius: 5px;
+   }
+
+   .row:after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+
+   .column {
+      float: centre;
+      width: 600px;
+      margin-left: 30%;
+	  color: floralwhite;
+   }
+
+   h2 {
+      text-align: center;
+      font-size: 50px;
+      margin-top: 100px;
+	  color: floralwhite;
+   }
+
+   body {
+      background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("home_background.jpg");
+	  background-position: center;
+      background-repeat: no-repeat;
+	  background-size: cover;
+   }
+
+   pre {
+      font-size: 20px;
+      color: floralwhite;
+   }
+</style>
+
+<body>
+   <h2><b>Contact Us</b></h2><br>
+   <hr>
+   <p style="color: floralwhite;"><b> *Contact us at our address or fill the form below </b></p>
+   <pre><b>
+			Address :- <b>  Shipkart ltd.,
+				             2nd floor, Millenium Plaza,
+				             Sardarpura, Udaipur, Rajasthan 313001.
+							
+			Email ID :-   help@shipkart.com
+							
+			Phone No:-  +91 919-702-3966
+      </b></pre>
+   </hr>
+   <ul>
+      <li><img src="logo.png" /></li>
+      <li style="float:right"><a href="about.html">About</a></li>
+      <li style="float:right"><a href="contact.html">Contact</a></li>
+      <li style="float:right"><a href="Home.html">Home</a></li>
+   </ul>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="column">
+            <form action = "contact.php" method = "POST">
+            <label for="fname"><b>Name</b></label>
+				   <input type="text" placeholder="Enter Name" name="fname" required><br>
+            <label for="email"><b>Email</b><label>
+                  <input type="text" placeholder="Enter Email Id" name="email" required><br>
+            <label for="subject"><b>Subject</b></label>
+                  <textarea id="subject" placeholder="Write Something...." name="subject" style="height:160px">
+		            </textarea><br>
+                  <input type="submit" value="Submit">
+            </form>
+         </div>
+      </div><br>
+   </div>
+</body>
+
+</html>
